@@ -1,0 +1,10 @@
+html, body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif; }
+
+.block {
+  background-color: #eee;
+  border: 1px solid #9D9D9D; }
+
+.block-red {
+  background: red; }
