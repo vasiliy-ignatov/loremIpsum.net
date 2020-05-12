@@ -18,5 +18,14 @@
 .btn_blue {
 	color: $white;
 	background-color: $blue;
-	border-color: $blue;
+	border-color: $white;
+}
+.btn_l-gray {
+	background-color: #f4f4f5;
+	border: 2px solid $blue;
+}
+.btn_large {
+	width: 100%;
+	padding: 15px 20px 14px;
+	font-size: $fz-normal;
 }

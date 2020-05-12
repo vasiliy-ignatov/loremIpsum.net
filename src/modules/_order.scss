@@ -1,0 +1,21 @@
+.order {
+	padding-top: 9.65%;
+	text-align: center;
+	color: $white;
+
+	&__title {
+		margin-bottom: 6.5%;
+	}
+	&__title p {
+		margin: 0;
+		padding: 0;
+		font-size: $fz-medium;
+
+		@media ($phone) {
+			font-size: $fz-small;
+		}
+	}
+	&__title .title {
+		margin-bottom: 15px;
+	}
+}

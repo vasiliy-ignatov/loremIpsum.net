@@ -20,4 +20,56 @@ block page
 							button.btn.btn_blue Заказать
 							button.btn Подробнее
 
+	section.section.section_gray-map
+		.container
+			.order
+				.order__title
+					h2.title.title_h2
+						| Оформление 
+						span.text-blue Заказа
+					p Перед заполнением формы ознакомьтесь с нашей схемой работы!
+				.stepper
+					.stepper__item
+						.stepper__image
+							img(src="./img/icons/i-search.png" alt="Search")
+						.stepper__text Lorem ipsum dolor sit amet
+					.stepper__item
+						.stepper__image
+							img(src="./img/icons/i-percent.png" alt="Percent")
+						.stepper__text Сonsecteturadipiscing elit
+					.stepper__item
+						.stepper__image
+							img(src="./img/icons/i-doc.png" alt="Docs")
+						.stepper__text Sed do eiusmod tempor
+					.stepper__item
+						.stepper__image
+							img(src="./img/icons/i-mail.png" alt="Mail")
+						.stepper__text Esse cillum dolore eu fugiat
+					.stepper__item
+						.stepper__image
+							img(src="./img/icons/i-money.png" alt="Money")
+						.stepper__text Excepteur sint occaecat cupidatat non proident
+			.form
+				.form__row
+					.grid
+						.grid__col.grid__col_4.grid__sm-col_12
+							input.input(type="text" placeholder="Выберите тип системы")
+						.grid__col.grid__col_4.grid__sm-col_12
+							input.input(type="email" placeholder="Ваш e-mail")
+						.grid__col.grid__col_4.grid__sm-col_12
+							input.input(type="text" placeholder="Ваше имя")
+				.form__row
+					.grid
+						.grid__col.grid__col_8.grid__sm-col_12
+							input.input(type="text")
+						.grid__col.grid__col_4.grid__sm-col_12
+							label.btn.btn_large.btn_l-gray(for="input-file-01")
+								i.icon
+								| Прикрепить файл
+							input.input.input_file(type="file" id="input-file-01")
+				.form__row
+					.grid
+						.grid__col.grid__col_4.grid__pull_4
+							button.btn.btn_blue.btn_large Отправить
+
 

@@ -226,11 +226,14 @@
 
 .title {
   margin: 0;
+  line-height: 1.333;
   text-transform: uppercase; }
 
 .title_h1 {
-  font-size: 3rem;
-  line-height: 1.333; }
+  font-size: 3rem; }
+
+.title_h2 {
+  font-size: 2.25rem; }
 
 .text-blue {
   color: #3e9cdc; }
@@ -257,7 +260,16 @@
 .btn_blue {
   color: #fff;
   background-color: #3e9cdc;
-  border-color: #3e9cdc; }
+  border-color: #fff; }
+
+.btn_l-gray {
+  background-color: #f4f4f5;
+  border: 2px solid #3e9cdc; }
+
+.btn_large {
+  width: 100%;
+  padding: 15px 20px 14px;
+  font-size: 16px; }
 
 .section {
   display: block;
@@ -277,12 +289,16 @@
     .section_main {
       padding-top: 57px; } }
 
+.section_gray-map {
+  min-height: 880px;
+  background-image: url("../img/bg-2.jpg"); }
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(39, 39, 51, 0.8); }
+  background-color: rgba(39, 39, 51, 0.9); }
   .header a {
     color: inherit;
     text-decoration: none; }
@@ -407,6 +423,134 @@
           margin-bottom: 20px; } }
       .m-banner__btn-group .btn:last-child {
         margin-right: 0; }
+
+.order {
+  padding-top: 9.65%;
+  text-align: center;
+  color: #fff; }
+  .order__title {
+    margin-bottom: 6.5%; }
+  .order__title p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px; }
+    @media (max-width: 480px) {
+      .order__title p {
+        font-size: 13px; } }
+  .order__title .title {
+    margin-bottom: 15px; }
+
+.stepper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6.7%;
+  font-size: 0;
+  list-style: none; }
+  @media (max-width: 768px) {
+    .stepper {
+      display: block;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto; } }
+  .stepper__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%; }
+    @media (max-width: 1200px) {
+      .stepper__item {
+        width: 18%; } }
+    @media (max-width: 768px) {
+      .stepper__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 70px; } }
+    .stepper__item::after {
+      content: '';
+      position: absolute;
+      top: 30.5%;
+      right: 0;
+      width: 60%;
+      height: 6px;
+      transform: translateX(85%);
+      z-index: 1;
+      background-position: center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-image: url("../img/stepper-dots.png"); }
+      @media (max-width: 1200px) {
+        .stepper__item::after {
+          width: 35%;
+          height: 6px;
+          transform: translateX(70%); } }
+      @media (max-width: 960px) {
+        .stepper__item::after {
+          top: 28%; } }
+      @media (max-width: 768px) {
+        .stepper__item::after {
+          width: 6px;
+          height: 50px;
+          top: auto;
+          left: 50%;
+          right: auto;
+          bottom: 0;
+          transform: translateX(-50%) translateY(115%);
+          background-size: auto 100%;
+          background-image: url("../img/stepper-dots_m.png"); } }
+    .stepper__item:last-child::after {
+      display: none; }
+  .stepper__image {
+    position: relative;
+    width: 58%;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-bottom: 9.5%;
+    border-radius: 50%;
+    background-color: #3e9cdc;
+    border: 5px solid #286690;
+    overflow: hidden; }
+    @media (max-width: 768px) {
+      .stepper__image {
+        margin-bottom: 10px; } }
+    .stepper__image::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%); }
+    .stepper__image img {
+      display: block;
+      width: 100%; }
+  .stepper__text {
+    font-size: 16px;
+    line-height: 1.25; }
+    @media (max-width: 1200px) {
+      .stepper__text {
+        font-size: 13px; } }
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: #2a2b30;
+  background-color: #dfdfe1;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  @media (max-width: 480px) {
+    .input {
+      font-size: 13px; } }
+
+.input_file {
+  display: none; }
+
+.form__row {
+  margin-bottom: 30px; }
 
 * {
   box-sizing: border-box; }

@@ -1,9 +1,13 @@
 .title {
 	margin: 0;
+	line-height: 1.333;
 	text-transform: uppercase;
 }
 
 .title_h1 {
 	font-size: $fz-xl;
-	line-height: 1.333;
+}
+
+.title_h2 {
+	font-size: $fz-big;
 }
