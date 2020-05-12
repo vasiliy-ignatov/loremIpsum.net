@@ -1,19 +1,41 @@
+// breakpoint mixin
+@mixin breakpoint($mq01) {
+	@media ($mq01) {
+		@content;
+	}
+}
+@mixin font-size-map($font-size-map) {
+	@each $breakpoint, $font-size in $font-size-map {
+		@if $breakpoint == null {
+			font-size: $font-size;
+		} @else {
+			@include breakpoint($breakpoint) {
+				font-size: $font-size;
+			}
+		}
+	}
+}
+
 // colors
-$body: #F2F1EF;
 $white: #fff;
-$yellow: #FBAE38;
-$black: #000000;
-$black2: #333333;
-$red: #E74A21;
-$gray: #9D9D9D;
+$black: #2a2b30;
+$black2: #272733;
+$blue: #3e9cdc;
+$blue2: #43abf0;
+$gray: #3d4050;
+$gray2: #6f6d7b;
 
-//gradients
-$g-yellow: linear-gradient(70.22deg, #EEB78B 18.62%, #D79D6F 66.52%);
-$g-gray: linear-gradient(134.86deg, #C5B6AA 45.49%, #E4DCD5 85.27%);
-
+// font-size
+$fz-small: 13px; // 13px
+$fz-normal: 16px; // 16px
+$fz-medium: 18px; //  18px
+$fz-large: 1.25rem; // 20px
+$fz-largest: 1.75rem; // 28px
+$fz-big: 2.25rem; // 36px
+$fz-xl: 3rem; // 48px
 
 // MEDIA
 $wide: 'max-width: 1200px';
-$medium: 'max-width: 992px';
+$medium: 'max-width: 960px';
 $small: 'max-width: 768px';
 $phone: 'max-width: 480px';

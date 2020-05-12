@@ -1,11 +1,35 @@
 @import "var";
+@import "grid";
+@import "title";
+@import "text";
+@import "btn";
+@import "section";
+@import "header";
+@import "navbar/navbar";
+@import "m-banner";
+
+$html-font-size: (null: 16px, $small: 13px, $phone: 10px);
+
+* {
+	box-sizing: border-box;
+}
 
 html, body {
 	background-color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
+	@include font-size-map($html-font-size);
 }
 
-.block	{
-	background-color: #eee;
-	border: 1px solid $gray;
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+
+	@media ($small) {
+		padding: 0 15px;
+	}
+}
+.image {
+	width: 100%;
+	height: auto;
 }
