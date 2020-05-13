@@ -1,0 +1,123 @@
+.m-select {
+	width: 100%;
+	position: relative;
+	text-align: left;
+	font-size: $fz-medium;
+	font-weight: 400;
+	line-height: 1;
+	white-space: nowrap;
+	user-select: none;
+
+	@media ($small) {
+		margin-bottom: 25px;
+	}
+
+	@media ($phone) {
+		font-size: $fz-small;
+	}
+	
+	&__header {
+		position: relative;
+		width: 100%;
+		padding: 13px 30px 13px 13px;
+		color: $black2;
+		background-color: $white2;
+		border: 1px solid $white;
+		border-radius: 5px;
+		transition: all .3s;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		
+
+		i {
+			position: absolute;
+			width: 11px;
+			height: 12px;
+			right: 13px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+
+			&::after,
+			&::before {
+				content: '';
+				position: absolute;
+				width: 2px;
+				height: 8px;
+				top: 2px;
+				background-color: $black;
+				transition: all .3s;
+				border-radius: 3px;
+			}
+			&::after {
+				right: 2px;
+				transform: rotate(45deg);
+			}
+			&::before {
+				left: 2px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	&__dropdown {
+		display: none;
+		position: absolute;
+		width: 100%;
+		max-height: 200px;
+		overflow-y: hidden;
+		padding: 2px 3px;
+		padding-left: 0;
+		top: 100%;
+		left: 0;
+		background-color: rgba(39, 39, 51, 0.95);
+		z-index: 1;
+		border: 1px solid $gray;
+		border-top: 0;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		@media ($small) {
+			background-color: rgba(39, 39, 51, 1);
+		}
+	}
+	&__item {
+		padding: 10px 13px;
+		border-radius: 0;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		transition: color .3s;
+
+		
+		&:hover, &.is-active {
+			color: $blue4;
+		}
+	}
+}
+
+.m-select.is-open {
+	.m-select__header {
+		color: $white;
+		border-color: $gray;
+		background-color: $gray;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+		&::after {
+			transform: translateY(-50%) rotate(-180deg);
+		}
+		i {
+			&::after {
+				right: 2px;
+				transform: rotate(135deg);
+				background-color: $white;
+			}
+			&::before {
+				left: 2px;
+				transform: rotate(-135deg);
+				background-color: $white;
+			}
+		}
+	}
+}

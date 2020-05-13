@@ -1,3 +1,4 @@
+
 .input {
 	display: block;
 	width: 100%;
@@ -8,7 +9,7 @@
 	color: $black;
 	background-color: $white2;
 	border: 1px solid $white;
-	border-radius: .25rem;
+	border-radius: 5px;
 	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
 	@media ($small) {
@@ -16,6 +17,10 @@
 	}
 	@media ($phone) {
 		font-size: $fz-small;
+	}
+	@include placeholder {
+		color: $black;
+		opacity: 1;
 	}
 }
 

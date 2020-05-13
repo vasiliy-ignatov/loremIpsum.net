@@ -16,6 +16,14 @@
 	}
 }
 
+// placeholder mixin
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder           { @content; }
+	&::-moz-placeholder          { @content; }
+	&:-ms-input-placeholder      { @content; }
+}
+
 // colors
 $white: #fff;
 $white2: #dfdfe1;
