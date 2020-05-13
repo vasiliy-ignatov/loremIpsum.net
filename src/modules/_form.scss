@@ -13,5 +13,9 @@
 
 	&__row_lp {
 		margin-bottom: 52px;
+
+		@media ($small) {
+			margin-bottom: 40px;
+		}
 	}
 }

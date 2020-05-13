@@ -1,0 +1,36 @@
+footer.footer
+	.container
+		.footer__inner
+			.footer__item.footer__item_left
+				-
+					var date = new Date();
+				span= '© ' + date.getFullYear() + ' «LoremIpsum.net»'.toUpperCase() + ' Все права защищены.'
+			.footer__item.footer__item_center
+				ul
+					li
+						a.footer__link(href="#")
+							span
+								img(src="./img/icons/i-qiwi.png", alt="")
+							| Qiwi wallet
+					li
+						a.footer__link(href="#")
+							span
+								img(src="./img/icons/i-folder.png", alt="")
+							| Yandex Money
+					li
+						a.footer__link(href="#")
+							span
+								img(src="./img/icons/i-wmoney.png", alt="")
+							| Web Money
+			.footer__item.footer__item_right
+				ul
+					li
+						a.footer__link(href="#")
+							span
+								img(src="./img/icons/i-smail.png", alt="")
+							| info@ipsum228.com
+					li
+						a.footer__link(href="#")
+							span
+								img(src="./img/icons/i-vk.png", alt="")
+							| Мы вконтакте
