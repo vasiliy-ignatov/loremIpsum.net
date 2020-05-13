@@ -58,15 +58,17 @@ block page
 							input.input(type="email" placeholder="Ваш e-mail")
 						.grid__col.grid__col_4.grid__sm-col_12
 							input.input(type="text" placeholder="Ваше имя")
-				.form__row
+				.form__row.form__row_lp
 					.grid
 						.grid__col.grid__col_8.grid__sm-col_12
-							input.input(type="text")
+							.range-input
+								span.range-input__label Sed ut perspiciatis, unde omnis iste natus
+								input.input.input_hidden.js-range-slider(type="range" min="0" max="100" value="75")
 						.grid__col.grid__col_4.grid__sm-col_12
 							label.btn.btn_large.btn_l-gray(for="input-file-01")
 								i.icon
 								| Прикрепить файл
-							input.input.input_file(type="file" id="input-file-01")
+							input.input.input_hidden(type="file" id="input-file-01")
 				.form__row
 					.grid
 						.grid__col.grid__col_4.grid__pull_4

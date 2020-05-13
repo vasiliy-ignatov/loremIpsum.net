@@ -1,0 +1,73 @@
+.input {
+	display: block;
+	width: 100%;
+	padding: 13px;
+	font-size: $fz-medium;
+	font-weight: 400;
+	line-height: 1;
+	color: $black;
+	background-color: $white2;
+	border: 1px solid $white;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+	@media ($small) {
+		margin-bottom: 25px;
+	}
+	@media ($phone) {
+		font-size: $fz-small;
+	}
+}
+
+.input_hidden {
+	display: none;
+}
+
+.range-input {
+	position: relative;
+	padding-top: 43px;
+	font-size: $fz-medium;
+	color: $white;
+
+	@media ($small) {
+		margin-bottom: 25px;
+		font-size: $fz-small;
+	}
+
+	&__label {
+		position: absolute;
+		top: -3px;
+		left: 0;
+	}
+
+	&__output {
+		position: absolute;
+		top: -2px;
+		right: 1px;
+
+		&::after {
+			content: ' %';
+		}
+	}
+
+	.rangeslider--horizontal {
+		height: 6px;
+		border: 1px solid $white;
+		background-color: $gray3;
+	}
+	.rangeslider {
+		&__handle {
+			width: 24px;
+			height: 24px;
+			background-color: $blue4;
+			border: 3px solid #286690;
+
+			&::after {
+				display: none;
+			}
+		}
+		&__fill {
+			background-color: $gray3;
+		}
+	}
+}

@@ -89,14 +89,16 @@
               </div>
             </div>
           </div>
-          <div class="form__row">
+          <div class="form__row form__row_lp">
             <div class="grid">
               <div class="grid__col grid__col_8 grid__sm-col_12">
-                <input type="text" class="input">
+                <div class="range-input"><span class="range-input__label">Sed ut perspiciatis, unde omnis iste natus</span>
+                  <input type="range" min="0" max="100" value="75" class="input input_hidden js-range-slider">
+                </div>
               </div>
               <div class="grid__col grid__col_4 grid__sm-col_12">
                 <label for="input-file-01" class="btn btn_large btn_l-gray"><i class="icon"></i>Прикрепить файл</label>
-                <input type="file" id="input-file-01" class="input input_file">
+                <input type="file" id="input-file-01" class="input input_hidden">
               </div>
             </div>
           </div>

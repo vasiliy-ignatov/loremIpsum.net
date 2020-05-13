@@ -1,5 +1,17 @@
 .form {
 	&__row {
 		margin-bottom: 30px;
+
+		@media ($small) {
+			margin-bottom: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__row_lp {
+		margin-bottom: 52px;
 	}
 }
