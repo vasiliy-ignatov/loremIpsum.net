@@ -1,4 +1,4 @@
-# LoremIpsum.Net
+## [LoremIpsum.Net](https://vasiliy-ignatov.github.io/loremIpsum.net/htdocs/)
 
 Установка модульных зависимостей
 ```bash
